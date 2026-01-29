@@ -1,14 +1,3 @@
-/**
-
-  Author: Devang Singh
-  Email: dsingh2024@my.fit.edu
-  Course: CSE 2010
-  Section: E3
-  Description of this file: HW1, Linked list for 3 Amazon products with basic functionalities
-
- */
-
-
 import java.io.File;
 import java.util.Scanner;
 
@@ -101,10 +90,10 @@ public class HW1 {
 
         void display() {
 
-            System.out.printf("%10s %13s %13s %10s%n", "seller", "productPrice", "shippingCost", "totalCost");
+            System.out.printf("%10s %13s %13s %13s%n", "seller", "productPrice", "shippingCost", "totalCost");
             SellerNode cur = head;
             while (cur != null) {
-                System.out.printf("%10s %13.2f %13.2f %10.2f%n", cur.seller, cur.price, cur.shipping, cur.totalCost());
+                System.out.printf("%10s %13.2f %13.2f %13.2f%n", cur.seller, cur.price, cur.shipping, cur.totalCost());
                 cur = cur.next;
             }
         }
@@ -201,6 +190,3 @@ public class HW1 {
         return null;
     }
 }
-/**Description of each method, including parameters
-          description of variables
-          description of each block (around 5-10 lines) of instructions */
